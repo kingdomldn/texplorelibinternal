@@ -1,0 +1,103 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Toyota Explore Module Library</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/ionicons.css">
+    <link href="http://vjs.zencdn.net/5.7.1/video-js.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/nav.js"></script>
+</head>
+<body>
+    <div class="overlay nav-toggle none"></div>
+    <nav class="main-navigation">
+        <div class="main-navigation-inside-wrapper">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+					<li><a href="overview.html">Modules overview</a></li>
+                    <li><a href="configs.html">Configurators</a></li>
+                    <li><a href="360s.html">360° 3D</a></li>
+					<li><a href="spinners.html">Spinners</a></li>
+					<li><a href="textimage.html">Text &amp; Image</a></li>
+					<li><a href="imgtxtstatic.html"><span class="inset"><div class="dot"></div>Static Content</span></a></li>
+					<li><a href="videos.html">Video</a></li>
+					<li><a href="images.html"><span class="currentpage">Image</span></a></li>
+                    <li><a href="imagefull.html"><span class="inset"><div class="dot"></div><span class="currentpage">Full Screen Images</span></span></a></li>
+                    <li><a href="appdownload.html">App Download</a></li>
+                </ul>
+            </div>
+            </nav>
+    <header class="nav">
+        <div class="nav-container">
+            <i class="menuicon icon ion-android-menu nav-toggle"></i>
+			<p class="nav-title"><a href="index.html">Toyota Explore Module Library</a></p>
+        </div>
+    </header>
+<!--
+	<div class="banner">
+		<div class="text-container">
+			<p class="banner-title">The Toyota Explore Module Library</p>
+			<p class="banner-sub">Discover the range of AR experiences avaliable</p>
+		</div>
+	</div>
+-->
+	<div class="header-spacer"></div>
+    <div class="container">
+        <p class="page-title">Full Screen images</p>
+        <div class="videowrapper">
+            <video id="my-video" class="vjs-16-9 video-js vjs-default-skin vjs-big-play-centered" controls preload="auto" width="auto" height="auto"
+  poster="videos/images/full-screen-images.jpg" data-setup="{}">
+    <source src="videos/images/full-screen-images.mp4" type='video/mp4'>
+<!--    <source src="MY_VIDEO.webm" type='video/webm'>-->
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a web browser that
+      <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+    </p>
+            </video>
+        </div>
+        <p class="category-title">Functionality overview</p>
+        <p class="body">The full screen image module simply loads an image defined in the app filling the devices display. The module has basic attributes to define titles and has potential to display animated images by using an animated gif file.</p>
+        <p class="category-title">Options when using this module</p>
+        <p class="body">When using the image module it is worth bearing in mind that the module is self contained and has no options to change content. As such it is best to use this module as a piece of hotspot content. When populating content it is possible to add a title to each image in order to give some definition and further structure. Since the background of this module is just a flat image it is possible to add further content so long as it is baked into the image itself, this creates further production times but does allow for lots of content variation.</p>
+        <p class="category-title">Cars using this module</p>
+        <div class="car-container">
+            <div class="car">
+                <img src="img/cars/auris.png">
+                <p class="car-title">Auris</p>
+            </div>
+            <div class="car">
+                <img src="img/cars/avensis.png">
+                <p class="car-title">Avensis</p>
+            </div>
+            <div class="car">
+                <img src="img/cars/aygo.png">
+                <p class="car-title">Aygo</p>
+            </div>
+            <div class="car">
+                <img src="img/cars/yaris.png">
+                <p class="car-title">Yaris</p>
+            </div>
+            <div class="car">
+                <img src="img/cars/rav4.png">
+                <p class="car-title">RAV4</p>
+            </div>
+            <div class="car">
+                <img src="img/cars/prius.png">
+                <p class="car-title">Prius</p>
+            </div>
+			
+        </div>
+        <div class="btn-body"><a href="images.html" class="red-btn"><span>Back to Image modules</span></a></div>
+    </div>
+    <script src="http://vjs.zencdn.net/5.7.1/video.js"></script>
+</body>
+
+</html>

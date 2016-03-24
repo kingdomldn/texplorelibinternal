@@ -1,0 +1,463 @@
+a:link, a:visited, a:hover, a:link:active, a:visited:active {
+    color: inherit;
+    outline: 0;
+    text-decoration: none;
+}
+
+html {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	font-family: 'Toyota Display',sans-serif;
+	color: inherit;
+}
+
+nav li {
+    list-style: none;
+}
+
+.header-spacer {
+	max-width: 900px;
+	margin: 0 auto;
+	height: 50px;
+	opacity: 0;
+	z-index: 0;
+}
+
+.none {
+    display: none;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+/*
+    background: black;
+    opacity: 0.6;
+*/
+    z-index: 4;
+}
+
+.main-navigation {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    bottom: 0;
+    width: 260px;
+    height: 100%;
+    background: #27323B;
+/*	background: #353F46;*/
+/*    opacity: 0.5;*/
+    transform: translateX(-100%);
+    transition: transform 0.6s ease;
+    z-index: 6;
+}
+
+.main-navigation-inside-wrapper {
+    width: 100%;
+    height: 80%;
+    padding-bottom: 20px;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: auto;
+}
+
+.main-navigation.shadow {
+/*    -webkit-box-shadow: 5px 0px 25px -1px rgba(0,0,0,0.75);*/
+/*    -moz-box-shadow: 5px 0px 25px -1px rgba(0,0,0,0.75);*/
+/*    box-shadow: 5px 0px 25px -1px rgba(0,0,0,0.75);*/
+}
+
+.main-navigation.open {
+    transform: translateX(0);
+    
+}
+
+.main-navigation ul {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.main-navigation ul a{
+    padding: 10px 30px;
+    display: block;
+    transition: background 0.4s ease;
+}
+
+.inset{
+    padding: 0px 20px;
+    display: block;
+/*	background: red;*/
+    transition: background 0.4s ease;
+}
+
+.d-inset{
+	list-style: circle;
+    padding: 0px 30px;
+    display: block;
+/*	background: red;*/
+    transition: background 0.4s ease;
+}
+
+.dot {
+	display: inline-block;
+	background: white;
+	border-radius: 2em;
+	height: 4px;
+	width: 4px;
+	margin-right: 8px;
+	vertical-align: middle;
+}
+
+.currentpage {
+/*	text-decoration: underline;*/
+	border-bottom: 1px solid rgba(255,255,255,0.4);
+	font-weight: bold;
+	
+}
+
+.main-navigation ul a:hover{
+    background: #353F46;
+}
+
+.nav {
+	position: fixed;
+	top: 0;
+	height: 60px;
+	width: 100%;
+	background-color: #27323B;
+	z-index: 2;
+	
+}
+
+.nav-container {
+	max-width: 960px;
+/*	margin: 0 auto;*/
+	padding: 0px 30px;
+}
+
+.container {
+	max-width: 900px;
+	margin: 50px auto;
+	padding: 0px 30px;
+}
+
+.text-container {
+    max-width: 840px;
+    margin: 0px auto;
+}
+
+.banner {
+	width: 100%;
+	min-height: 325px;
+	background-image: url(../img/home-head.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+
+.homeicon {
+	display: inline-block;
+	margin: 0;
+	padding-top: 14px;
+	vertical-align: middle;
+	font-size: 25px;
+	color: #E0E7EE;
+}
+
+.menuicon {
+	display: inline-block;
+	margin: 0;
+	padding-top: 14px;
+    padding-right: 5px;
+	vertical-align: middle;
+	font-size: 25px;
+	color: #E0E7EE;
+    cursor: pointer;
+}
+
+.menuicon:hover {
+    color: #FFFFFF;
+}
+
+.homeicon a:hover {
+	color: #FFFFFF;
+}
+
+.nav-title {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0;
+	padding-top: 12px;
+	padding-left: 20px;
+	font-weight: normal;
+	letter-spacing: 0.5px;
+	font-size: 17px;
+	color: #E0E7EE;
+}
+
+.nav-title a:hover {
+	color: #FFFFFF;
+}
+
+.page-title {
+    max-width: 750px;
+	margin: 0 auto;
+	font-weight: bold;
+	font-size: 1.65em;
+/*	color: #1E2A32;*/
+    color: #334048;
+	padding: 0px;
+}
+
+.category-title {
+    max-width: 750px;
+	margin: 0 auto;
+	font-weight: bold;
+	font-size: 1.25em;
+    color: #334048;
+	padding: 0px;
+}
+
+.body {
+    max-width: 750px;
+    margin: 20px auto;
+    font-weight: normal;
+    font-size: 1em;
+	color: #444444;
+	letter-spacing: 0.5px;
+	line-height: 1.6;
+}
+
+.bodylink {
+	border-bottom: 1px solid #27323B;
+	font-weight: bold;
+	
+}
+
+.lrg-img {
+    max-width: 900px;
+    height: auto;
+    margin: 0px auto;
+	margin-bottom: 40px;
+}
+
+.img-scale {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0px auto;
+}
+
+.banner-title {
+	margin: 40px auto 25px auto;
+	text-align: center;
+	font-weight: bold;
+	font-size: 40px;
+	color: white;
+	padding: 75px 30px 0px 30px;
+	text-shadow: 0px 0px 10px #000000;
+}
+
+.banner-sub {
+	margin: 0px auto;
+	text-align: center;
+	font-weight: normal;
+	font-size: 20px;
+	letter-spacing: 0.5px;
+	color: white;
+	padding: 0px 30px;
+	text-shadow: 0px 0px 10px #000000;
+	
+}
+
+
+.btn-body {
+    max-width: 750px;
+	height: auto;
+    margin: 35px auto;
+}
+
+.red-btn{
+	display: inline-block;
+	padding: 10px 20px;
+    background-color: #d2001e;
+	-webkit-box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,0.5);
+	box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    background-image: -webkit-gradient(linear,left 0,left 100%,from(#d2001e),to(#73000d));
+    background-image: -webkit-linear-gradient(top,#d2001e,0,#73000d,100%);
+    background-image: -moz-linear-gradient(top,#d2001e 0,#73000d 100%);
+    background-image: linear-gradient(to bottom,#d2001e 0,#73000d 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FFD2001E', endColorstr='#FF73000D');
+}
+
+.red-btn:hover {
+	text-decoration: underline;
+	color: white;
+	background-image: -webkit-gradient(linear,left 0,left 100%,from(#73000d),to(#73000d));
+    background-image: -webkit-linear-gradient(top,#73000d,0,#73000d,100%);
+    background-image: -moz-linear-gradient(top,#73000d 0,#73000d 100%);
+    background-image: linear-gradient(to bottom,#73000d 0,#73000d 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FF73000D', endColorstr='#FF73000D');
+}
+
+.red-btn span {
+	color: white;
+}
+
+
+.grid-container {
+	max-width: 750px;
+	height: auto;
+	margin: 30px auto;
+	padding: 0px;
+}
+
+.grid-item {
+	display: inline-block;
+	margin: 0 auto;
+	margin-right: 2%;
+	margin-left: 2%;
+	margin-bottom: 30px;
+	max-width: 45%;
+	background: #27323B;
+	border-radius: 5px;
+}
+
+.grid-img {
+	min-width: 45%;
+	height: auto;
+}
+
+.rounded {
+	border-radius: 5px 5px 0px 0px;
+}
+
+.grid-title {
+	margin: 0;
+	padding: 20px;
+	font-size: 1em;
+	font-weight: bold;
+	letter-spacing: 0.5px;
+	border-radius: 0px 0px 5px 5px;
+	color: white;
+	background-color: #27323B;
+	transition: background 0.3s ease;
+}
+
+.grid-title:hover {
+	background: #353F46;
+	cursor: pointer;
+	
+}
+
+.gridarrow {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 22px;
+	margin-left: 12px;
+}
+
+.videowrapper {
+    max-width: 750px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.car-container {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.car {
+    display: inline-block;
+    max-width: 195px;
+}
+
+.car-title {
+    position: relative;
+    top: -25px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: #27323B;
+}
+
+.btn-container {
+    max-width: 750px;
+    padding-top: 30px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.dl-btn {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    width: 150px;
+    height: auto;
+}
+
+.dl-btn:nth-child(1) {
+    margin-right: 25px;
+    margin-bottom: 15px;
+}
+
+/*Media Queries */
+@media only screen and (max-width: 520px) {
+    .grid-item {
+	max-width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 430px) {
+	.banner-title {
+		padding: 55px 30px 0px 30px; 
+		font-size: 35px;
+	}
+	
+	.banner-sub {
+		font-size: 18px;
+	}
+	
+	
+}
+
+@media only screen and (max-width: 363px) {
+    .nav-container {
+        padding: 0px 15px;
+    }
+    
+    .container {
+        padding: 0px 15px;
+    }
+	
+	.main-navigation ul a {
+    padding: 10px 15px;
+    display: block;
+    transition: background 0.4s ease;
+}
+}
+
+@media only screen and (max-width: 332px) {
+    .nav-title {
+        padding-left: 5px;
+    }
+}

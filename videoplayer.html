@@ -1,0 +1,90 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Toyota Explore Module Library</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/ionicons.css">
+    <link href="http://vjs.zencdn.net/5.7.1/video-js.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/nav.js"></script>
+</head>
+<body>
+    <div class="overlay nav-toggle none"></div>
+    <nav class="main-navigation">
+        <div class="main-navigation-inside-wrapper">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+					<li><a href="overview.html">Modules overview</a></li>
+                    <li><a href="configs.html">Configurators</a></li>
+                    <li><a href="360s.html">360° 3D</a></li>
+					<li><a href="spinners.html">Spinners</a></li>
+					<li><a href="textimage.html">Text &amp; Image</a></li>
+					<li><a href="videos.html"><span class="currentpage">Video</span></a></li>
+					<li><a href="videoplayer.html"><span class="inset"><div class="dot"></div><span class="currentpage">Video Player</span></span></a></li>
+<!--					<li><a href="videolauncher.html"><span class="inset"><div class="dot"></div>Video Launcher</span></a></li>-->
+					<li><a href="images.html">Image</a></li>
+                    <li><a href="appdownload.html">App Download</a></li>
+                </ul>
+            </div>
+            </nav>
+    <header class="nav">
+        <div class="nav-container">
+            <i class="menuicon icon ion-android-menu nav-toggle"></i>
+			<p class="nav-title"><a href="index.html">Toyota Explore Module Library</a></p>
+        </div>
+    </header>
+<!--
+	<div class="banner">
+		<div class="text-container">
+			<p class="banner-title">The Toyota Explore Module Library</p>
+			<p class="banner-sub">Discover the range of AR experiences avaliable</p>
+		</div>
+	</div>
+-->
+	<div class="header-spacer"></div>
+    <div class="container">
+        <p class="page-title">Video Player</p>
+        <div class="videowrapper">
+            <video id="my-video" class="vjs-16-9 video-js vjs-default-skin vjs-big-play-centered" controls preload="auto" width="auto" height="auto"
+  poster="videos/video-modules/full-screen-video.jpg" data-setup="{}">
+    <source src="videos/video-modules/full-screen-video.mp4" type='video/mp4'>
+<!--    <source src="MY_VIDEO.webm" type='video/webm'>-->
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a web browser that
+      <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+    </p>
+            </video>
+        </div>
+        <p class="category-title">Functionality overview</p>
+        <p class="body">The video player in Toyota explore launches straight into the video when a page is detected. Playing the video full screen with audio (if the device isn't muted). When the video has ended the user is given the option to replay the video or return  to their previous location in the app.</p>
+        <p class="category-title">Options when using this module</p>
+        <p class="body">Since the video player module is a self contained experience it can be used anywhere in the app that it can be launched from. The most basic use is by scanning a page to launch the video. Alternative options are whenever a standard hotspot is used in an experience. An example of this could be the user tapping on a hotspot in a config module to load a video then return to the config unit.</p>
+        <p class="category-title">Cars using this module</p>
+        <div class="car-container">
+            <div class="car">
+                <img src="img/cars/aygo.png">
+                <p class="car-title">Aygo</p>
+            </div>
+            <div class="car">
+                <img src="img/cars/auris.png">
+                <p class="car-title">Auris</p>
+            </div>
+            <div class="car">
+                <img src="img/cars/avensis.png">
+                <p class="car-title">Avensis</p>
+            </div>
+        </div>
+        <div class="btn-body"><a href="videos.html" class="red-btn"><span>Back to video modules</span></a></div>
+    </div>
+    <script src="http://vjs.zencdn.net/5.7.1/video.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Toyota Explore Module Library</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/ionicons.css">
+    <link href="http://vjs.zencdn.net/5.7.1/video-js.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/nav.js"></script>
+</head>
+<body>
+    <div class="overlay nav-toggle none"></div>
+    <nav class="main-navigation">
+        <div class="main-navigation-inside-wrapper">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+					<li><a href="overview.html">Modules overview</a></li>
+                    <li><a href="configs.html">Configurators</a></li>
+                    <li><a href="360s.html"><span class="currentpage">360° 3D</span></a></li>
+					<li><a href="360full.html"><span class="inset"><div class="dot"></div><span class="currentpage">Full Screen</span></span></a></li>
+					<li><a href="spinners.html">Spinners</a></li>
+					<li><a href="textimage.html">Text &amp; Image</a></li>
+					<li><a href="videos.html">Video</a></li>
+					<li><a href="images.html">Image</a></li>
+                    <li><a href="appdownload.html">App Download</a></li>
+                </ul>
+            </div>
+            </nav>
+    <header class="nav">
+        <div class="nav-container">
+            <i class="menuicon icon ion-android-menu nav-toggle"></i>
+			<p class="nav-title"><a href="index.html">Toyota Explore Module Library</a></p>
+        </div>
+    </header>
+<!--
+	<div class="banner">
+		<div class="text-container">
+			<p class="banner-title">The Toyota Explore Module Library</p>
+			<p class="banner-sub">Discover the range of AR experiences avaliable</p>
+		</div>
+	</div>
+-->
+	<div class="header-spacer"></div>
+    <div class="container">
+        <p class="page-title">Full Screen 360° 3D</p>
+        <div class="videowrapper">
+            <video id="my-video" class="vjs-16-9 video-js vjs-default-skin vjs-big-play-centered" controls preload="auto" width="auto" height="auto"
+  poster="videos/360-modules/360-full-screen.jpg" data-setup="{}">
+    <source src="videos/360-modules/360-full-screen.mp4" type='video/mp4'>
+<!--    <source src="MY_VIDEO.webm" type='video/webm'>-->
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a web browser that
+      <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+    </p>
+            </video>
+        </div>
+        <p class="category-title">Functionality overview</p>
+        <p class="body">The full screen 360° 3D module allows for the user to swipe left or right and rotate a 3D object in 360°. Over a 36 frame sequence we can place hotspots anywhere in the scene that link to any of the existing module types. This module is based on 3D rendered imagery the output displayed in the app is anything that can be created by the 3D team at Toyota.</p>
+        <p class="category-title">Options when using this module</p>
+        <p class="body">The 360° modules should be used as a base module that is launched from a page similar to that of a configurator. The module has the option of displaying hotspots or just featuring a 3D asset. When applying hotspots to the module any of the existing modules can be attached. In the videos above the image &amp; text module has been used although this can be changed, some effective alternatives may be a video player or image(s) modules. Please note that the number of hotspots in the module will affect the amount of time taken to populate the content into the application.</p>
+        <p class="category-title">Cars using this module</p>
+        <div class="car-container">
+            <div class="car">
+                <img src="img/cars/rav4.png">
+                <p class="car-title">RAV4</p>
+            </div>
+            <div class="car">
+                <img src="img/cars/prius.png">
+                <p class="car-title">Prius</p>
+            </div>
+        </div>
+        <div class="btn-body"><a href="360s.html" class="red-btn"><span>Back to 360° 3D modules</span></a></div>
+    </div>
+    <script src="http://vjs.zencdn.net/5.7.1/video.js"></script>
+</body>
+
+</html>
